@@ -4,7 +4,8 @@ $(document).ready(function(){
     	e.preventDefault()
     	var result = $('input[type="checkbox"]:checked');
     	var genre = result.val();
-        var page = Math.floor((Math.random() * 900) + 1);
+        var page = Math.floor((Math.random() * 190) + 1);
+        console.log(page);
     	var url = 'https://api.themoviedb.org/3/discover/movie?api_key=c206e5f00d20a4cfe4d4f8fbe1befebd&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page='+ page +'&with_genres='
     	var searchUrl = url + genre
     	if (result.length > 0) {
@@ -22,7 +23,7 @@ $(document).ready(function(){
 
     function showMovie (response){
         $('.modal-header').hide();
-        total_pages = response.total_pages
+        console.log(response.total_pages)
     	listMovies = response.results;
     	recommendation = (listMovies[0]);
         console.log(recommendation)

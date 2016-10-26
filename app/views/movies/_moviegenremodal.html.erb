@@ -1,0 +1,51 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="text-align:center">
+        	
+	        	<form action="" method="post">
+	        		<div class="col-xs-12 genres">
+		        		<div class="col-sm-6 left-genres">
+		        			<br>
+		        			<input id="genre" type="checkbox" name="action" value="28">Action<br>
+							<input id="genre" type="checkbox" name="adventure" value="12">Adventure<br>
+							<input id="genre" type="checkbox" name="animation" value="16">Animation<br>
+							<input id="genre" type="checkbox" name="comedy" value="35">Comedy<br>
+							<input id="genre" type="checkbox" name="crime" value="80">Crime<br>
+							<input id="genre" type="checkbox" name="documentary" value="99">Documentary<br>
+							<input id="genre" type="checkbox" name="drama" value="18">Drama<br>
+							<input id="genre" type="checkbox" name="family" value="10751">Family<br>
+							<input id="genre" type="checkbox" name="fantasy" value="14">Fantasy
+		        		</div>
+						<div class="col-sm-6 right-genres">
+							<br>
+							<input id="genre" type="checkbox" name="history" value="36">History<br>
+							<input id="genre" type="checkbox" name="horror" value="27">Horror<br>
+							<input id="genre" type="checkbox" name="mystery" value="9648">Mystery<br>
+							<input id="genre" type="checkbox" name="romance" value="10749">Romance<br>
+							<input id="genre" type="checkbox" name="science-fiction" value="878">Science Fiction<br>
+							<input id="genre" type="checkbox" name="thriller" value="53">Thriller<br>
+							<input id="genre" type="checkbox" name="thriller" value="10770">TV Movie<br>
+							<input id="genre" type="checkbox" name="war" value="10752">War<br>
+							<input id="genre" type="checkbox" name="western" value="37">Western<br>
+						</div>
+					</div>
+					
+					<center><input id="btnSubmit" type="submit"></center>
+				</form>
+        </h4>
+      </div>
+      <div class="modal-body" style="text-align:center;">
+		<div class="movieRecommendation">
+			
+		</div>
+		<div>
+			<button class="try-again">Not quite? Next option</button>
+		</div>
+		<div>
+			<%= button_to "Start over?", root_path, :method => "get", :class => "new-search"%>
+		</div>
+	  </div>
+    </div>
+</div>
