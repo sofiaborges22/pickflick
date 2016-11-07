@@ -3,9 +3,19 @@
 	</head>
 	<body>
 	<center>
-		<h1>Pick Flick</h1>
-		<%= button_to "Movies", movies_path, :method => "get", :class => "movies-btn"%>
-		<%= button_to "Series", series_path, :method => "get", :class => "series-btn"%>
+		<div class="container">
+			<div class="header row">
+				<h1 class="logo"></h1>
+				<div class="home-grabber">No idea what to watch?</div>
+				<div class="home-text">Don't worry, we got this.</div>
+			</div>
+			<div class="row btn-row">
+				
+					<%= button_to "Movies", movies_path, :method => "get", :class => "movies-series-btn btn-lg movies-btn"%>
+					<%= button_to "Series", series_path, :method => "get", :class => "movies-series-btn btn-lg series-btn"%>
+				
+			</div>
+		</div>
 	</center>
 	</body>
 </html>

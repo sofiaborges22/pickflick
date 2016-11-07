@@ -15,3 +15,57 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+	background-color: black;
+	background-image: url("pickflickbackground.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	font-style: helvetica;
+}
+
+.logo {
+	background-image: url("pickflick.png");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: 100px;
+}
+
+.modal-content {
+	border-color: white;
+	border-width: 3px;	
+}
+
+.modal-header {
+	background-color: black;
+	color: white;
+}
+
+#btnSubmit {
+	background-color: black;
+	color: white;
+}
+
+#btnSubmit:hover {
+	border-width: 3px;
+	border-color: red;
+}
+
+.modal-result-btn {
+	background-color: black;
+	color: white;
+}
+
+.modal-result-btn:hover {
+	border-width:3px;
+	border-color: red;
+}
+
+.try-again {
+	float:left;
+}
+
+.new-search{
+	float:right;
+}

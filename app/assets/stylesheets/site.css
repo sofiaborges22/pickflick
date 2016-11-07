@@ -1,3 +1,33 @@
-// Place all the styles related to the site controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.movies-series-btn {
+	width: 150px;
+  height: 150px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: black;
+  color: white;
+  position: relative;
+  display: inline-block;
+  border-color: red;
+}
+
+.movies-series-btn:hover {
+  background-image: url("popcorn.png");
+  color:black;
+  font-weight:bold;
+}
+
+.home-grabber {
+  font-size: 40px;
+  color:white;
+  font-weight: bold;
+}
+
+.home-text {
+  font-size: 38px;
+  color:white;
+  font-weight: bold;
+
+}

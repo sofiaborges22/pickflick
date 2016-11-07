@@ -30,9 +30,13 @@ $(document).ready(function(){
         var imageUrl = 'http://image.tmdb.org/t/p/w185' + recommendation.poster_path
     	var recommendation_title = $('<h4>').text(recommendation.title);
      	var recommendation_summary = $('<h5>').text(recommendation.overview);
+        var recommendation_rating = $('<h5>').text("Voter Rating: " + recommendation.vote_average)
+        var recommendation_release_date = $('<h5>').text("Release Date: " + recommendation.first_air_date)
      	$('.seriesRecommendation').append($('<img>').attr('src', imageUrl));
     	$('.seriesRecommendation').append(recommendation_title);
      	$('.seriesRecommendation').append(recommendation_summary);
+        $('.seriesRecommendation').append(recommendation_rating);
+        $('.seriesRecommendation').append(recommendation_release_date);
      	$('.try-again').show();
      	$('.new-search').show();
         counter = 0
@@ -43,10 +47,14 @@ $(document).ready(function(){
             var imageUrl = 'http://image.tmdb.org/t/p/w185' + new_serie.poster_path
             var recommendation_title = $('<h4>').text(new_serie.title);
             var recommendation_summary = $('<h5>').text(new_serie.overview);
+            var recommendation_rating = $('<h5>').text("Voter Rating: " + new_serie.vote_average)
+            var recommendation_release_date = $('<h5>').text("Release Date: " + new_serie.first_air_date)
             $('.seriesRecommendation').empty();
             $('.seriesRecommendation').append($('<img>').attr('src', imageUrl));
             $('.seriesRecommendation').append(recommendation_title);
             $('.seriesRecommendation').append(recommendation_summary);
+            $('.seriesRecommendation').append(recommendation_rating);
+            $('.seriesRecommendation').append(recommendation_release_date);
         })
     };
 
