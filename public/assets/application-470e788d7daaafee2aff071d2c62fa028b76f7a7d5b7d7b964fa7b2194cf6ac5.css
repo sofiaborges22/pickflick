@@ -1,0 +1,130 @@
+/* line 4, /Users/sofiaborges/Documents/PickFlick/pickflick/app/assets/stylesheets/movies.scss */
+.try-again {
+  display: none;
+}
+
+/* line 8, /Users/sofiaborges/Documents/PickFlick/pickflick/app/assets/stylesheets/movies.scss */
+.new-search {
+  display: none;
+}
+
+/* line 12, /Users/sofiaborges/Documents/PickFlick/pickflick/app/assets/stylesheets/movies.scss */
+.left-genres {
+  text-align: left;
+}
+
+/* line 16, /Users/sofiaborges/Documents/PickFlick/pickflick/app/assets/stylesheets/movies.scss */
+.right-genres {
+  text-align: left;
+}
+
+/* line 20, /Users/sofiaborges/Documents/PickFlick/pickflick/app/assets/stylesheets/movies.scss */
+.genres {
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+.movies-series-btn {
+	width: 150px;
+  height: 150px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 70px;
+  border-width: 10px;
+  background-color: black;
+  color: white;
+  position: relative;
+  display: inline-block;
+  border-color: red;
+}
+
+.movies-series-btn:hover {
+  background-image: url("popcorn.png");
+  color:black;
+  font-weight:bold;
+}
+
+.home-grabber {
+  font-size: 40px;
+  color:white;
+  font-weight: bold;
+}
+
+.home-text {
+  font-size: 38px;
+  color:white;
+  font-weight: bold;
+
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	background-color: black;
+	background-image: url("pickflickbackground.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	font-style: helvetica;
+}
+
+.logo {
+	background-image: url("pickflick.png");
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: contain;
+	height: 100px;
+}
+
+.modal-content {
+	border-color: white;
+	border-width: 3px;	
+}
+
+.modal-header {
+	background-color: black;
+	color: white;
+}
+
+#btnSubmit {
+	background-color: black;
+	color: white;
+}
+
+#btnSubmit:hover {
+	border-width: 3px;
+	border-color: red;
+}
+
+.modal-result-btn {
+	background-color: black;
+	color: white;
+}
+
+.modal-result-btn:hover {
+	border-width:3px;
+	border-color: red;
+}
+
+.try-again {
+	float:left;
+}
+
+.new-search{
+	float:right;
+}
